@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/Navbar.tsx';
+import Navbar from './components/Navbar/Navbar.tsx';
 import HeroSection from './components/HeroSection.tsx';
 import ContentSection from './components/ContentSection.tsx';
 import SkillsSection from './components/SkillsSection.tsx';
