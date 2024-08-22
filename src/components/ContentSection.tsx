@@ -1,6 +1,4 @@
-import ContentPicture from '../assets/content-picture.png';
-
-// TODO: change content picture, it has bad quality
+import ContentPicture from '../assets/content-picture.jpg';
 
 const ContentSection = () => {
     return (
@@ -14,7 +12,7 @@ const ContentSection = () => {
                         <h3 className="font-semibold text-lg h-[140%]">About Me</h3>
                         <h2 className="mt-5 mb-8 font-bold text-3xl h-[120%]">My goal is to create software products, that everyone
                             will enjoy.</h2>
-                        <p className="max-w-none font-medium text-base text-black/75">I'm passionate about creating software that not only
+                        <p className="max-w-none font-medium text-base text-black/60">I'm passionate about creating software that not only
                             functions seamlessly but also delights users. My experience
                             spans both front-end and back-end development, allowing me
                             to build robust and user-friendly applications. Studying at
