@@ -1,6 +1,6 @@
 import Link from "antd/es/typography/Link";
 import profilePicture from "../../assets/Profile-picture-without-me.jpg";
-import X from "./X.tsx";
+import MenuIcon from "./MenuIcon.tsx";
 import { DownOutlined } from '@ant-design/icons';
 // import Menu from "./Menu.tsx";   <----- ADD THIS PANEL FOR MOBILE DEVICES WHICH APPEARS AFTER YOU CLICK ON X (BUTON)
 
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <NavLinks />
                 </div>
                 <div className="menu-button flex justify-start md:hidden">
-                    <X />
+                    <MenuIcon />
                 </div>
             </div>
         </nav>

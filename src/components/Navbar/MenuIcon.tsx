@@ -1,9 +1,9 @@
 import { MenuOutlined } from "@ant-design/icons";
 
-const X = () => {
+const MenuIcon = () => {
     return (
         <MenuOutlined />
     );
 };
 
-export default X;
+export default MenuIcon;
