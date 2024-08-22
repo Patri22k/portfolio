@@ -17,7 +17,7 @@ const SkillsSection = () => {
                             For me? They are my live &lt;3</p>
                     </div>
                 </div>
-                <div className="grid-container grid grid-rows-1 grid-cols-1 gap-x-10 gap-y-6 justify-stretch items-stretch mx-auto mt-20 w-full max-w-[430px]">
+                <div className="grid-container grid grid-cols-1 grid-rows-1 gap-x-10 gap-y-6 justify-stretch items-stretch mx-auto mt-20 w-full max-w-[430px]">
                     <div className="tile-grid flex flex-col gap-y-4 px-8 py-9 rounded-xl bg-[#3f3f3f]">
                         <div className="icon-container mb-4">
                             <img className='w-[50px] h-[50px] max-w-full' src={ReactIcon} alt="React Icon"></img>
