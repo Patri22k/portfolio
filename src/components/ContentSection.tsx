@@ -1,5 +1,7 @@
 import ContentPicture from '../assets/content-picture.png';
 
+// TODO: change content picture, it has bad quality
+
 const ContentSection = () => {
     return (
         <div className="content-container">

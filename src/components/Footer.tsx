@@ -1,29 +1,31 @@
 import profilePicture from "../assets/Profile-picture-without-me.jpg";
 import facebookIcon from '../assets/Logos/facebook-logo.svg';
 import instagramIcon from '../assets/Logos/instagram-logo.svg';
-import twitterIcon from '../assets/Logos/twitter-logo.svg';
 import githubIcon from '../assets/Logos/github-logo.svg';
 
 const Footer = () => {
     return (
-        <div className="footer-container">
-            <div className="footer-text-wrapper">
-                <p>© 2024 All Rights Reserved</p>
-                <img className="" src={profilePicture} alt="Profile picture"></img>
-                <p>Designed with Precision</p>
+        <div className="footer-container mx-auto w-full max-w-full">
+            <div className="footer-text-wrapper flex flex-col items-center justify-center gap-y-5 pt-[50px] pb-10">
+                <p className="text-xs h-[140%] text-footerGray">© 2024 All Rights Reserved</p>
+                <img className="mx-[30px] w-16 max-w-full text-sm rounded-2.5xl" src={profilePicture} alt="Profile picture"></img>
+                <p className="text-xs text-footerGray">DESIGNED WITH PRECISION</p>
             </div>
-            <div className="footer-social-media-wrapper">
+            <div className="footer-social-media-wrapper flex justify-center items-center gap-x-3 pb-[50px]">
                 <div className="link-block">
-                    <img className="w-[50px] h-[50px]" src={facebookIcon} alt="Facebook Icon"></img>
+                    <a className="flex justify-center items-center w-11 h-11" href="https://github.com/Patri22k" target="_blank">
+                        <img className="w-5 h-5 max-w-full" src={githubIcon} alt="GitHub Icon"></img>
+                    </a>
                 </div>
                 <div className="link-block">
-                    <img className="w-[50px] h-[50px]" src={instagramIcon} alt="Instagram Icon"></img>
+                    <a className="flex justify-center items-center w-11 h-11" href="https://www.instagram.com/patrik.bajzik/" target="_blank">
+                        <img className="w-5 h-5 max-w-full" src={instagramIcon} alt="Instagram Icon"></img>
+                    </a>
                 </div>
                 <div className="link-block">
-                    <img className="w-[50px] h-[50px]" src={twitterIcon} alt="Twitter Icon"></img>
-                </div>
-                <div className="link-block">
-                    <img className="w-[50px] h-[50px]" src={githubIcon} alt="GitHub Icon"></img>
+                    <a className="flex justify-center items-center w-11 h-11" href="https://www.facebook.com/pato.bajzik/" target="_blank">
+                        <img className="w-5 h-5 max-w-full" src={facebookIcon} alt="Facebook Icon"></img>
+                    </a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{html,css,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        '2.5xl': '20px',
+      },
+      colors: {
+        footerGray: "rgba(31, 32, 34, 0.5)",
+      },
+    },
   },
   plugins: [],
 }
