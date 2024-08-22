@@ -10,7 +10,7 @@ const HeroSection = () => {
                         <h2 className="text-4xl font-bold text-center">Hi! I'm Patrik Bajzík</h2>
                     </div>
                     <div className="w-full max-w-[600px]">
-                        <p className="text-center">I am a full stack programmer and software developer <br />
+                        <p className="text-center font-normal">I am a full stack programmer and software developer <br />
                             based in Trnava, Slovakia.</p>
                     </div>
                     <div className="mt-4">
