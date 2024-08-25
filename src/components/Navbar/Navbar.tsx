@@ -1,23 +1,24 @@
-import Link from "antd/es/typography/Link";
-import profilePicture from "../../assets/Profile-picture-without-me.jpg";
-import MenuIcon from "./MenuIcon.tsx";
-import { DownOutlined } from '@ant-design/icons';
-import { useState } from "react";
-import Menu from "./Menu.tsx";
+import { Link } from "react-router-dom"
+import profilePicture from "../../assets/Profile-picture-without-me.jpg"
+import MenuIcon from "./MenuIcon.tsx"
+import { DownOutlined } from '@ant-design/icons'
+import { useState } from "react"
+import Menu from "./Menu.tsx"
 
+// TODO: style navlink component
 const NavLinks = () => {
     return (
         <div className="navigation-links-wrapper flex">
             <div className="link flex">
-                <Link>Home</Link>
+                <Link to="/">Home</Link>
                 <DownOutlined />
             </div>
             <div className="link flex">
-                <Link>Projects</Link>
+                <Link to="/projects">Projects</Link>
                 <DownOutlined />
             </div>
             <div className="link flex">
-                <Link>Contacts</Link>
+                <Link to="/contacts">Contacts</Link>
                 <DownOutlined />
             </div>
         </div>

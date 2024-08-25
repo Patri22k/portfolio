@@ -6,8 +6,7 @@ import SkillsSection from './components/SkillsSection.tsx';
 import ProjectSection from './components/ProjectsSection.tsx';
 import Footer from './components/Footer.tsx';
 
-//TODO: style all components
-
+// TODO: style every component for responsivity, mobile devices are pretty much done
 function App() {
   return (
     <>

@@ -1,12 +1,24 @@
-import Link from "antd/es/typography/Link";
+import { Link } from "react-router-dom"
+import { DownOutlined } from '@ant-design/icons'
+
+// TODO: style the components
 
 const Menu = () => {
     return (
-        <>
-            <Link>Home</Link>
-            <Link>Projects</Link>
-            <Link>Contacts</Link>
-        </>
+        <div>
+            <div className="link flex">
+                <Link to="/">Home</Link>
+                <DownOutlined />
+            </div>
+            <div className="link flex">
+                <Link to="/projects">Projects</Link>
+                <DownOutlined />
+            </div>
+            <div className="link flex">
+                <Link to="/contacts">Contacts</Link>
+                <DownOutlined />
+            </div>
+        </div>
     );
 };
 
