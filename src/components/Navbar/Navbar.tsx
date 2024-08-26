@@ -43,12 +43,12 @@ const Navbar = () => {
                     </div>
 
                     {/* NavLinks for Desktop */}
-                    <div className="navbar-links-container hidden md:block">
+                    <div className="navbar-links-container hidden lg:block">
                         <NavLinks />
                     </div>
 
                     {/* Menu Button for Mobile */}
-                    <div className="menu-button md:hidden flex justify-end items-center">
+                    <div className="menu-button lg:hidden flex justify-end items-center">
                         <button onClick={toggleMenu}>
                             <MenuIcon />
                         </button>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Display */}
             {isOpen && (
-                <div className="mobile-menu flex flex-col items-start bg-white shadow-md p-4 absolute top-16 left-0 w-full md:hidden">
+                <div className="mobile-menu flex flex-col items-start bg-white shadow-md p-4 absolute top-16 left-0 w-full lg:hidden">
                     <Menu />
                 </div>
             )}
