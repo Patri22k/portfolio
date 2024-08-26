@@ -3,7 +3,7 @@ import temporaryCover from '../assets/temporary-project-cover.svg';
 const ProjectSection = () => {
     return (
         <div className="projects-container">
-            <div className="projects-padding-container px-4">
+            <div className="projects-padding-container px-[5%]">
                 <div className="projects-width-container w-full max-w-[1280px] mx-auto">
                     <div className="projects-wrapper py-16">
                         <div className="projects-flex-container flex flex-col items-center ">

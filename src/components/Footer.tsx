@@ -6,7 +6,7 @@ import githubIcon from '../assets/Logos/github-logo.svg';
 const Footer = () => {
     return (
         <div className="footer-container mx-auto w-full max-w-full">
-            <div className="footer-text-wrapper flex flex-col items-center justify-center gap-y-5 pt-[50px] pb-10">
+            <div className="footer-text-wrapper flex flex-col items-center justify-center gap-y-5 border-t border-t-[#dfdad2] pt-[50px] pb-10">
                 <p className="text-xs h-[140%] text-footerGray">© 2024 All Rights Reserved</p>
                 <img className="mx-[30px] w-16 max-w-full text-sm rounded-2.5xl" src={profilePicture} alt="Profile picture"></img>
                 <p className="text-xs text-footerGray">DESIGNED WITH PRECISION</p>
