@@ -18,7 +18,7 @@ const NavLinks = () => {
                 <DownOutlined />
             </div>
             <div className="link flex">
-                <Link to="/contacts">Contacts</Link>
+                <Link to="/contact">Contact</Link>
                 <DownOutlined />
             </div>
         </div>

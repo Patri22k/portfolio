@@ -16,6 +16,7 @@ export default defineConfig({
       input: {
         main: resolve(root, "index.html"),
         projects: resolve(root, "pages", "projects", "index.html"),
+        contact: resolve(root, "pages", "contact", "index.html"),
       },
     },
   },

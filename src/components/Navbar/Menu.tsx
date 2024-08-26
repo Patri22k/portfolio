@@ -15,7 +15,7 @@ const Menu = () => {
                 <DownOutlined />
             </div>
             <div className="link flex">
-                <Link to="/contacts">Contacts</Link>
+                <Link to="/contact">Contacts</Link>
                 <DownOutlined />
             </div>
         </div>
