@@ -18,10 +18,10 @@ const Menu = () => {
             </div>
             <div
                 className="link-container pb-2 w-auto h-auto"
-                onMouseEnter={e => {
+                onMouseEnter={() => {
                     setStyle({ display: "block" });
                 }}
-                onMouseLeave={e => {
+                onMouseLeave={() => {
                     setStyle({ display: "none" })
                 }}>
                 <div className="link-wrapper flex gap-x-1 pt-5 pb-3">
