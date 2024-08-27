@@ -5,26 +5,6 @@ import { DownOutlined } from '@ant-design/icons'
 import { useState } from "react"
 import Menu from "./Menu.tsx"
 
-// TODO: style navlink component
-const NavLinks = () => {
-    return (
-        <div className="navigation-links-wrapper flex">
-            <div className="link flex">
-                <Link to="/">Home</Link>
-                <DownOutlined />
-            </div>
-            <div className="link flex">
-                <Link to="/projects">Projects</Link>
-                <DownOutlined />
-            </div>
-            <div className="link flex">
-                <Link to="/contact">Contact</Link>
-                <DownOutlined />
-            </div>
-        </div>
-    );
-};
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -33,9 +13,9 @@ const Navbar = () => {
     };
 
     return (
-        <>
-            <nav className="navigation-container block relative">
-                <div className="navigation-wrapper flex justify-between items-center py-3 mx-auto w-[90%]">
+        <div className="navigation-container">
+            <nav className="navigation-inner-container block relative">
+                <div className="navigation-wrapper flex justify-between items-center py-3 mx-auto w-[90%] max-w-[1340px] lg:w-[95%]">
 
                     {/* Logo Section */}
                     <div className="navigation-logo flex justify-start items-center h-10 w-10">
@@ -44,7 +24,25 @@ const Navbar = () => {
 
                     {/* NavLinks for Desktop */}
                     <div className="navbar-links-container hidden lg:block">
-                        <NavLinks />
+                        <div className="navigation-links-wrapper flex gap-x-8 w-auto h-auto">
+                            <div className="link-container pb-2 w-auto h-auto">
+                                <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
+                                    <DownOutlined className="py-auto" />
+                                    <Link to="/" className="font-semibold text-xl">Home</Link>
+                                </div>
+                            </div>
+                            <div className="link-container pb-2 w-auto h-auto">
+                                <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
+                                    <Link to="/projects" className="font-semibold text-xl">Projects</Link>
+                                    <DownOutlined className="py-auto" />
+                                </div>
+                            </div>
+                            <div className="link-container pb-2 w-auto h-auto">
+                                <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
+                                    <Link to="/contact" className="font-semibold text-xl">Contact</Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Menu Button for Mobile */}
@@ -58,11 +56,11 @@ const Navbar = () => {
 
             {/* Mobile Menu Display */}
             {isOpen && (
-                <div className="mobile-menu flex flex-col items-start bg-white shadow-md p-4 absolute top-16 left-0 w-full lg:hidden">
+                <div className="mobile-menu flex flex-col items-start bg-white shadow-md p-4 absolute top-16 left-0 w-full z-50 lg:hidden">
                     <Menu />
                 </div>
             )}
-        </>
+        </div>
     );
 };
 

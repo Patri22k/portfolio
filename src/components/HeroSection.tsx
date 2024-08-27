@@ -2,7 +2,7 @@ import { Button } from "antd";
 
 const HeroSection = () => {
     return (
-        <div className="hero-container py-20 min-[479px]:pt-24 min-[479px]:pb-10">
+        <div className="hero-container py-20 min-[480px]:pt-24 min-[480px]:pb-10 -z-10">
             <div className="main-container px-4 md:px-6">
                 <div className="title-wrap-hero flex flex-col items-center gap-y-6">
                     <hr className="w-24 h-3 m-auto bg-gradient-to-r from-white to-black rounded-e-lg" />

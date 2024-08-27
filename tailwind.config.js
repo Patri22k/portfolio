@@ -9,6 +9,9 @@ export default {
       borderRadius: {
         '2.5xl': '20px',
       },
+      screens: {
+        "xs": "480px",
+      },
       colors: {
         footerGray: "rgba(31, 32, 34, 0.5)",
       },
