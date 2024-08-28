@@ -29,20 +29,30 @@ const Example = () => {
                         <img className="rounded-sm" src={profilePicture} alt="Profile picture"></img>
                     </div>
 
+                    {/* Navigation Links */}
                     <div className="navbar-links-container hidden lg:block">
                         <div className="navigation-links-wrapper flex gap-x-8 w-auto h-auto">
 
-                            {/* Projects 1 */}
-                            <FlyoutLink FlyoutContent={ProjectTypes}>
-                                <Link to="/projects" className="font-semibold text-xl">Projects</Link>
+                            {/* Home */}
+                            <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
                                 <DownOutlined className="py-auto" />
-                            </FlyoutLink>
+                                <Link to="/" className="font-semibold text-xl">Home</Link>
+                            </div>
 
-                            {/* Projects 2 */}
-                            <FlyoutLink FlyoutContent={ProjectTypes}>
-                                <Link to="/projects" className="font-semibold text-xl">Projects</Link>
-                                <DownOutlined className="py-auto" />
-                            </FlyoutLink>
+                            {/* Projects */}
+                            <div className="link-wrapper pt-5 pb-3">
+                                <FlyoutLink FlyoutContent={ProjectTypes}>
+                                    <div className="flex justify-center gap-x-1">
+                                        <Link to="/projects" className="font-semibold text-xl">Projects</Link>
+                                        <DownOutlined className="py-auto" />
+                                    </div>
+                                </FlyoutLink>
+                            </div>
+
+                            {/* Contact */}
+                            <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
+                                <Link to="/contact" className="font-semibold text-xl">Contact</Link>
+                            </div>
                         </div>
                     </div>
 
