@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     return (
-        <div className="hero-container py-20 min-[480px]:pt-24 min-[480px]:pb-10 -z-10">
+        <div className="hero-container py-20 min-[480px]:pt-24 min-[480px]:pb-10 relative z-0">
             <div className="main-container px-4 md:px-6">
                 <div className="title-wrap-hero flex flex-col items-center gap-y-6">
                     <hr className="w-24 h-3 m-auto bg-gradient-to-r from-white to-black rounded-e-lg" />
                     <div className="w-full max-w-[1008px]">
-                        <h2 className="text-5xl font-bold text-center md:text-6xl lg:text-7xl 2xl:text-8xl">Hi! I'm Patrik Bajzík</h2>
+                        <h2 className="text-4xl font-bold text-center sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl">
+                            Hi! <br className="block min-[385px]:hidden" />
+                            I'm Patrik Bajzík
+                        </h2>
                     </div>
                     <div className="w-full max-w-[600px]">
                         <p className="text-center font-normal lg:text-xl 2xl:text-2xl">I am a full stack programmer and software developer <br />
