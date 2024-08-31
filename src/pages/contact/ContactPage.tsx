@@ -1,9 +1,8 @@
 import { DiscordOutlined, MailOutlined, PhoneOutlined } from "@ant-design/icons";
 import Navbar from "../../components/Navbar/Navbar";
 import profilePicture from "../../assets/Profile-picture-without-me.jpg";
+import { Link } from "react-router-dom";
 
-// TODO: change navbar links
-// TODO: responsive design
 // TODO: maybe add text to my profile icon in the footer
 
 function ContactPage() {
@@ -11,32 +10,32 @@ function ContactPage() {
         <div className="contact-page-container">
             <div className="contact-page-wrapper">
                 <Navbar />
-                <div className="contact-page-content-container py-16">
-                    <div className="contact-page-content-wrapper px-4">
+                <div className="contact-page-content-container py-16 sm:py-20 md:py-24">
+                    <div className="contact-page-content-wrapper px-4 max-w-[1352px] md:px-6 mx-auto">
                         <div className="text-content-container flex flex-col items-center gap-y-4 my-4">
                             <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl">
                                 I Don't Byte!
                             </h1>
                             <p className="text-base lg:text-xl 2xl:text-2xl">console.log("Hello!");</p>
                         </div>
-                        <div className="grid-layout grid grid-cols-1 grid-rows-1 gap-x-10 gap-y-8 mt-16 mx-auto max-w-[400px] text-white">
+                        <div className="grid-layout grid grid-cols-1 grid-rows-1 items-stretch justify-stretch gap-x-10 gap-y-8 mt-16 mx-auto max-w-[400px] text-white w-full lg:grid-cols-3 lg:w-auto lg:max-w-none">
 
                             {/* EMAIL */}
-                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-10 py-6">
+                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-6 py-10">
                                 <MailOutlined className="text-4xl" />
                                 <h2 className="font-medium text-xl">Mail Me</h2>
                                 <p>bajzik.patrik6@gmail.com</p>
                             </div>
 
                             {/* PHONE */}
-                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-10 py-6">
+                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-6 py-10">
                                 <PhoneOutlined className="text-4xl" />
                                 <h2 className="font-medium text-xl">Call Me</h2>
                                 <p>+421 904 605 850</p>
                             </div>
 
                             {/* DISCORD */}
-                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-10 py-6">
+                            <div className="contact-info-container flex flex-col items-center gap-y-4 bg-[#3f3f3f] rounded-xl px-6 py-10">
                                 <DiscordOutlined className="text-4xl" />
                                 <h2 className="font-medium text-xl">Write Me</h2>
                                 <p>Patri22k#2466</p>
@@ -44,10 +43,14 @@ function ContactPage() {
                         </div>
                     </div>
                 </div>
-                <div className="contact-footer-container w-full px-10">
-                    <div className="contact-footer-wrapper pt-24 pb-10">
-                        <img className="w-14 max-w-full mb-8 text-sm rounded-2.5xl" src={profilePicture} alt="Profile picture"></img>
-                        <div className="footer-links-container flex flex-col py-5 text-gray-500">
+                <div className="contact-footer-container w-full px-10 sm:px-[5vw] bg-[#fafafa]">
+                    <div className="contact-footer-wrapper py-24 w-auto lg:w-[90%]">
+                        <div className="inline-block mb-8">
+                            <Link to="/">
+                                <img className="w-14 max-w-full text-sm rounded-2.5xl lg:w-32" src={profilePicture} alt="Profile picture"></img>
+                            </Link>
+                        </div>
+                        <div className="footer-links-container flex flex-col py-5 text-gray-500 lg:flex-row">
                             <a className="footer-links pb-1 mr-5 mb-5" href="https://www.instagram.com/patrik.bajzik/" target="_blank">
                                 <p className="footer-links inline pb-1 mr-5 mb-5 text-xl shadow-[inset_0px_-2px_0px_0px_rgba(0,0,0,0.5)]">
                                     Instagram
