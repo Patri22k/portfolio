@@ -78,7 +78,7 @@ const Example = () => {
 };
 
 const FlyoutLink: React.FC<NavbarProps> = ({ children, FlyoutContent }) => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     const showFlyout = FlyoutContent && open;
 
