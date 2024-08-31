@@ -46,8 +46,9 @@ function ContactPage() {
                 <div className="contact-footer-container w-full px-10 sm:px-[5vw] bg-[#fafafa]">
                     <div className="contact-footer-wrapper py-24 w-auto lg:w-[90%]">
                         <div className="inline-block mb-8">
-                            <Link to="/">
+                            <Link to="/" className="flex items-center gap-x-5">
                                 <img className="w-14 max-w-full text-sm rounded-2.5xl lg:w-32" src={profilePicture} alt="Profile picture"></img>
+                                <h1 className="text-3xl font-extrabold lg:text-4xl 2xl:text-5xl">Personal Portfolio</h1>
                             </Link>
                         </div>
                         <div className="footer-links-container flex flex-col py-5 text-gray-500 lg:flex-row">

@@ -78,7 +78,7 @@ const Example = () => {
 };
 
 const FlyoutLink: React.FC<NavbarProps> = ({ children, FlyoutContent }) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     const showFlyout = FlyoutContent && open;
 
@@ -94,7 +94,7 @@ const FlyoutLink: React.FC<NavbarProps> = ({ children, FlyoutContent }) => {
                     style={{
                         transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
                     }}
-                    className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
+                    className="absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-orange-400 transition-transform duration-300 ease-out"
                 />
             </div>
             <AnimatePresence>
@@ -104,10 +104,9 @@ const FlyoutLink: React.FC<NavbarProps> = ({ children, FlyoutContent }) => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 15 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="absolute left-1/2 top-12 w-[calc(100vw-17px)] !-translate-x-1/2 bg-white z-10"
+                        className="absolute top-12 w-[calc(100vw-20px)] !-translate-x-[78vw] bg-white z-10 2xl:w-[calc(100vw-8px)] 2xl:!-translate-x-[73vw]"
                     >
                         <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-                        <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45" />
                         <FlyoutContent />
                     </motion.div>
                 )}
@@ -120,20 +119,24 @@ const ProjectTypes = () => {
     return (
         <div className="menu-projects-container">
             <div className="menu-projects-wrapper flex justify-evenly shadow-2xl pb-8">
-                <div className="subproject-container flex gap-x-2 border-b-2 border-b-black py-4">
-                    <h3 className="text-black/50">/01</h3>
-                    <h1 className="text-2xl font-medium">GitHub Projects</h1>
-                    <div className="arrow-container flex justify-center items-center w-8 h-8">
-                        <img src="https://cdn.prod.website-files.com/66bf407255e2bbac50fde356/66bf9e7b27401f68266d92b9_Arrow%20-%20Right.svg" alt="Arrow"></img>
+                <Link to="/projects">
+                    <div className="subproject-container flex gap-x-2 border-b-2 border-b-black py-4">
+                        <h3 className="text-black/50">/01</h3>
+                        <h1 className="text-2xl font-medium">GitHub Projects</h1>
+                        <div className="arrow-container flex justify-center items-center w-8 h-8">
+                            <img src="https://cdn.prod.website-files.com/66bf407255e2bbac50fde356/66bf9e7b27401f68266d92b9_Arrow%20-%20Right.svg" alt="Arrow"></img>
+                        </div>
                     </div>
-                </div>
-                <div className="subproject-container flex gap-x-2 border-b-2 border-b-black py-4">
-                    <h3 className="text-black/50">/02</h3>
-                    <h1 className="text-2xl font-medium">School Projects</h1>
-                    <div className="arrow-container flex justify-center items-center w-8 h-8">
-                        <img src="https://cdn.prod.website-files.com/66bf407255e2bbac50fde356/66bf9e7b27401f68266d92b9_Arrow%20-%20Right.svg" alt="Arrow"></img>
+                </Link>
+                <Link to="/projects">
+                    <div className="subproject-container flex gap-x-2 border-b-2 border-b-black py-4">
+                        <h3 className="text-black/50">/02</h3>
+                        <h1 className="text-2xl font-medium">School Projects</h1>
+                        <div className="arrow-container flex justify-center items-center w-8 h-8">
+                            <img src="https://cdn.prod.website-files.com/66bf407255e2bbac50fde356/66bf9e7b27401f68266d92b9_Arrow%20-%20Right.svg" alt="Arrow"></img>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     );
