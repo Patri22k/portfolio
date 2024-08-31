@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-component-notes
+old-navbar
 
 # Editor directories and files
 .vscode/*
