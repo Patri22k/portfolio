@@ -2,12 +2,15 @@ import { DiscordOutlined, MailOutlined, PhoneOutlined } from "@ant-design/icons"
 import Navbar from "../../components/Navbar/Navbar";
 import profilePicture from "../../assets/Profile-picture-without-me.jpg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
-// TODO: maybe add text to my profile icon in the footer
 
 function ContactPage() {
     return (
         <div className="contact-page-container">
+            <Helmet>
+                <title>Contact - My Website</title>
+            </Helmet>
             <div className="contact-page-wrapper">
                 <Navbar />
                 <div className="contact-page-content-container py-16 sm:py-20 md:py-24">
