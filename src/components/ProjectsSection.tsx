@@ -1,4 +1,6 @@
 import temporaryCover from '../assets/temporary-project-cover.svg';
+import valentinkaCover from "../assets/valentinka-2024-cover.png";
+import socialappCover from "../assets/social-app-cover.png";
 
 const ProjectSection = () => {
     return (
@@ -31,14 +33,14 @@ const ProjectSection = () => {
                                 {/* Second image (Top Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
                                     <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9]'>
-                                        <img className="w-full h-full max-w-full object-cover" src={temporaryCover} alt="School Projects"></img>
+                                        <img className="w-full h-full max-w-full" src={valentinkaCover} alt="School Projects"></img>
                                     </div>
                                 </div>
 
                                 {/* Third image (Bottom Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
-                                    <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9]'>
-                                        <img className="w-full h-full max-w-full object-cover" src={temporaryCover} alt="On-going Projects"></img>
+                                    <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9] border-4'>
+                                        <img className="w-full h-full max-w-full" src={socialappCover} alt="On-going Projects"></img>
                                     </div>
                                 </div>
                             </div>
