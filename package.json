@@ -14,6 +14,7 @@
     "antd": "^5.20.1",
     "framer-motion": "^11.3.30",
     "react": "^18.2.0",
+    "react-animate-height": "^3.2.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },

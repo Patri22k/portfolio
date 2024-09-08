@@ -1,15 +1,17 @@
 import { useState } from "react";
-import { DownOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import profilePicture from "../../assets/Profile-picture-without-me.jpg";
 import MenuIcon from "./MenuIcon.tsx";
 import Menu from "./Menu.tsx";
+import AnimateHeight from 'react-animate-height';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [height, setHeight] = useState<number | 'auto'>(0);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+        setHeight(isOpen ? 0 : 'auto');
     };
 
     return (
@@ -27,23 +29,18 @@ const Navbar = () => {
                         <div className="navigation-links-wrapper flex gap-x-8 w-auto h-auto">
 
                             {/* Home */}
-                            <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
-                                <Link to="/" className="font-semibold text-xl">Home</Link>
-                                <DownOutlined className="py-auto" />
+                            <div className="link-wrapper group flex justify-center gap-x-1 pt-5 pb-3">
+                                <Link to="/" className="font-semibold text-xl bg-left-bottom bg-gradient-to-r from-red-400 to-red-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Home</Link>
                             </div>
 
                             {/* Projects */}
-                            <div className="link-wrapper pt-5 pb-3">
-                                <div className="flex justify-center gap-x-1">
-                                    <Link to="/projects" className="font-semibold text-xl">Projects</Link>
-                                    <DownOutlined className="py-auto" />
-                                </div>
+                            <div className="link-wrapper group flex justify-center gap-x-1 pt-5 pb-3">
+                                <Link to="/projects" className="font-semibold text-xl bg-left-bottom bg-gradient-to-r from-red-400 to-red-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Projects</Link>
                             </div>
 
                             {/* Contact */}
-                            <div className="link-wrapper flex justify-center gap-x-1 pt-5 pb-3">
-                                <Link to="/contact" className="font-semibold text-xl">Contact</Link>
-                                <DownOutlined className="py-auto" />
+                            <div className="link-wrapper group flex justify-center gap-x-1 pt-5 pb-3">
+                                <Link to="/contact" className="font-semibold text-xl bg-left-bottom bg-gradient-to-r from-red-400 to-red-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Contact</Link>
                             </div>
                         </div>
                     </div>
@@ -58,14 +55,17 @@ const Navbar = () => {
             </nav>
 
             {/* Mobile Menu Display */}
-            {
-                isOpen && (
-                    <div className="mobile-menu flex flex-col items-start bg-white shadow-md p-4 absolute top-16 left-0 w-full z-50 lg:hidden">
+            <div className="mobile-menu overflow-hidden absolute top-16 left-0 w-full z-50 lg:hidden">
+                <AnimateHeight
+                    height={height}
+                    duration={700}
+                >
+                    <div className="flex flex-col items-start bg-white shadow-md p-4">
                         <Menu />
                     </div>
-                )
-            }
-        </div >
+                </AnimateHeight>
+            </div>
+        </div>
     );
 };
 
