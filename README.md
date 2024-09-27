@@ -1,16 +1,28 @@
-# Portfolio in Progress 🎨
+# Patrik's Portfolio 😎🚀
 
-Hello there, and welcome to my site,  
-Where creativity shines oh so bright.  
-This portfolio’s a work, still in the making,  
-With pieces to come and updates in the baking.  
+Hey there, I’m Patrik, coding with style 💻🔥,  
+Building up projects, stayin’ agile 🛠️💪,  
+Next.js on deck ⛵, with React on the go ⚡,  
+Tailwind's my sidekick 🌬️, making it flow 🌊.
 
-Designs and projects, still under wraps,  
-Soon to be featured with no mishaps.  
-Check back again for new and fresh views,  
-For now, enjoy this little muse.  
+Typed in TypeScript, strict but it’s clean 🧼👨‍💻,  
+CLI in Go 🚀, a dev’s best dream 🌙💭,  
+MC server forms, signin’ with ease 📝🎮,  
+Partnership requests? Just hit **submit**, please! 📨✅
 
-Thank you for stopping, it's great to see,  
-Your patience and support mean a lot to me.  
-Stay tuned for updates, exciting and new,  
-As I craft this portfolio just for you!
+Debuggin’ my bugs 🐛 like a late-night boss 👑🌙,  
+A line in the console 📟, I'm never at loss 📈.  
+Frontend finesse 🎨, backend’s a breeze 🌬️,  
+I make REST APIs like spreading some cheese 🧀😎.
+
+From WebStorm to Git 🌀🔧, my tools are prime ⚙️🏆,  
+Code and commit, I’m in my zone, full-time 🕒💼.  
+But hit me up 📞, we’ll collab in the end 🎤,  
+On LinkedIn or GitHub—let’s code, my friend! 🤝💻
+
+---
+
+Even though I like poems 🖋️, I'm not that poetic 🎭,  
+This rhyme's AI-made—props to ChatGPT, synthetic! 🤖💡  
+This all I wrote surely is true 🧐,  
+Who's gonna care in Mc Drive-through? 🍔🚗🎧
