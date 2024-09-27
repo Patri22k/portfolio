@@ -1,4 +1,4 @@
-# Patrik's Portfolio 😎🚀
+# My Portfolio 🚀
 
 Hey there, I’m Patrik, coding with style 💻🔥,  
 Building up projects, stayin’ agile 🛠️💪,  
@@ -25,4 +25,4 @@ On LinkedIn or GitHub—let’s code, my friend! 🤝💻
 Even though I like poems 🖋️, I'm not that poetic 🎭,  
 This rhyme's AI-made—props to ChatGPT, synthetic! 🤖💡  
 This all I wrote surely is true 🧐,  
-Who's gonna care in Mc Drive-through? 🍔🚗🎧
+Who's gonna care in MC Drive-through? 🍔🚗🎧
