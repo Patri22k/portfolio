@@ -1,6 +1,6 @@
-import temporaryCover from '../assets/temporary-project-cover.svg';
-import valentinkaCover from "../assets/valentinka-2024-cover.png";
-import socialappCover from "../assets/social-app-cover.png";
+import taskTracker from '../assets/task-tracker-cover-height.png';
+import valentineCover from "../assets/valentinka-2024-cover.png";
+import socialAppCover from "../assets/social-app-cover.png";
 
 const ProjectSection = () => {
     return (
@@ -26,21 +26,21 @@ const ProjectSection = () => {
                                 {/* First image taking full height of the first column */}
                                 <div className="gallery-box-container row-span-2 box-border w-full h-full">
                                     <div className='gallery-box-wrapper box-border w-full h-full max-w-full'>
-                                        <img className="w-full h-full max-w-full object-cover" src={temporaryCover} alt="Github Projects"></img>
+                                        <img className="w-full h-full max-w-full object-cover" src={taskTracker} alt="Github Projects"></img>
                                     </div>
                                 </div>
 
                                 {/* Second image (Top Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
                                     <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9]'>
-                                        <img className="w-full h-full max-w-full" src={valentinkaCover} alt="School Projects"></img>
+                                        <img className="w-full h-full max-w-full" src={valentineCover} alt="School Projects"></img>
                                     </div>
                                 </div>
 
                                 {/* Third image (Bottom Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
                                     <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9] border-4'>
-                                        <img className="w-full h-full max-w-full" src={socialappCover} alt="On-going Projects"></img>
+                                        <img className="w-full h-full max-w-full" src={socialAppCover} alt="On-going Projects"></img>
                                     </div>
                                 </div>
                             </div>

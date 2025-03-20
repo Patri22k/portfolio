@@ -14,6 +14,6 @@ function ProjectsPage() {
             <Footer />
         </div>
     );
-};
+}
 
 export default ProjectsPage;

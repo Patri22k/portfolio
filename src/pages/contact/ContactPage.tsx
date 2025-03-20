@@ -91,6 +91,6 @@ function ContactPage() {
             </div>
         </div >
     );
-};
+}
 
 export default ContactPage;
