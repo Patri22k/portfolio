@@ -32,7 +32,7 @@ const ProjectsContent = () => {
                                         </span>
                                     </a>
                                 </p>
-                                <a className="group transition-all duration-300 ease-in-out break-all 2xl:text-lg" href="https://github.com/Patri22k/valentin-2024" target="_blank">
+                                <a className="group transition-all duration-300 ease-in-out break-all 2xl:text-lg" href="https://github.com/Patri22k/task-tracker" target="_blank">
                                     <span className="hover:transitions-color hover:text-sky-500 bg-left-bottom bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                         <LinkOutlined /> https://github.com/Patri22k/task-tracker
                                     </span>
@@ -104,7 +104,7 @@ const ProjectsContent = () => {
                                     the core functionalities of the app are intact, and the existing codebase 
                                     serves as a solid foundation for further development.
                                 </p>
-                                <a className="group transition-all duration-300 ease-in-out break-all 2xl:text-lg" href="https://github.com/Patri22k/valentin-2024" target="_blank">
+                                <a className="group transition-all duration-300 ease-in-out break-all 2xl:text-lg" href="https://github.com/Patri22k/social-app" target="_blank">
                                     <span className="hover:transitions-color hover:text-sky-500 bg-left-bottom bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                                         <LinkOutlined /> https://github.com/Patri22k/social-app
                                     </span>
