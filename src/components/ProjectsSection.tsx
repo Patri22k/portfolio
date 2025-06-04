@@ -1,5 +1,5 @@
 import taskTracker from '../assets/task-tracker-cover-height.png';
-import valentineCover from "../assets/valentinka-2024-cover.png";
+import personalBlogCover from "../assets/personal-blog-cover.png";
 import socialAppCover from "../assets/social-app-cover.png";
 
 const ProjectSection = () => {
@@ -32,8 +32,8 @@ const ProjectSection = () => {
 
                                 {/* Second image (Top Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
-                                    <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9]'>
-                                        <img className="w-full h-full max-w-full" src={valentineCover} alt="School Projects"></img>
+                                    <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9] border-4'>
+                                        <img className="w-full h-full max-w-full" src={personalBlogCover} alt="Roadmap Projects"></img>
                                     </div>
                                 </div>
 
