@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import profilePicture from "../../assets/Profile-picture-without-me.jpg";
-import MenuIcon from "./MenuIcon.tsx";
 import Menu from "./Menu.tsx";
+import profilePicture from "../../assets/Profile-picture-without-me.jpg";
 import AnimateHeight from 'react-animate-height';
+import {MenuOutlined} from "@ant-design/icons";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
                     {/* Menu Button for Mobile */}
                     <div className="menu-button lg:hidden flex justify-end items-center">
                         <button onClick={toggleMenu}>
-                            <MenuIcon />
+                            <MenuOutlined />
                         </button>
                     </div>
                 </div>
