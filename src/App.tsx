@@ -4,8 +4,6 @@ import Home from "./pages/Home.tsx";
 import Contact from "./pages/Contact.tsx";
 import Projects from './pages/Projects.tsx';
 
-// TODO: Add a dynamic title for each page
-
 function App() {
   return (
     <Router>
@@ -13,7 +11,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="*" element={<App />} />*
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
