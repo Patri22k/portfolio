@@ -1,6 +1,6 @@
-import taskTracker from "../../../assets/task-tracker-cover-width.png";
-import personalBlogCover from "../../../assets/personal-blog-cover.png";
-import socialAppCover from "../../../assets/social-app-cover.png";
+import taskTracker from "../assets/task-tracker-cover-width.png";
+import personalBlogCover from "../assets/personal-blog-cover.png";
+import socialAppCover from "../assets/social-app-cover.png";
 import { LinkOutlined } from "@ant-design/icons";
 
 const ProjectsContent = () => {

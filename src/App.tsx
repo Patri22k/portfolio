@@ -1,27 +1,22 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar.tsx';
-import HeroSection from './components/HeroSection.tsx';
-import ContentSection from './components/ContentSection.tsx';
-import SkillsSection from './components/SkillsSection.tsx';
-import ProjectSection from './components/ProjectsSection.tsx';
-import Footer from './components/Footer.tsx';
-import {Helmet} from 'react-helmet';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Contact from "./pages/Contact.tsx";
+import Projects from './pages/Projects.tsx';
+
+// TODO: Add a dynamic title for each page
 
 function App() {
   return (
-    <>
-      <Helmet>
-        <title>Patrik Bajzík | Personal Portfolio</title>
-      </Helmet>
-      <Navbar/>
-      <HeroSection/>
-      <ContentSection/>
-      <SkillsSection/>
-      <ProjectSection/>
-      <Footer/>
-    </>
-
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="contact" element={<Contact />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="*" element={<App />} />*
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
