@@ -1,6 +1,6 @@
 import taskTracker from '../assets/task-tracker-cover-height.png';
 import personalBlogCover from "../assets/personal-blog-cover.png";
-import socialAppCover from "../assets/social-app-cover.png";
+import todoListMern from "../assets/todo-list-mern-cover.png";
 
 const ProjectSection = () => {
     return (
@@ -40,7 +40,7 @@ const ProjectSection = () => {
                                 {/* Third image (Bottom Right) */}
                                 <div className="gallery-box-container box-border w-full h-auto">
                                     <div className='gallery-box-wrapper box-border w-full max-w-full aspect-[16/9] border-4'>
-                                        <img className="w-full h-full max-w-full" src={socialAppCover} alt="On-going Projects"></img>
+                                        <img className="w-full h-full max-w-full" src={todoListMern} alt="On-going Projects"></img>
                                     </div>
                                 </div>
                             </div>
